@@ -26,10 +26,11 @@ function About() {
              whileInView={{opacity:1, x:0}}
              initial={{opacity:0, x:100}}
              transition={{duration:1}}
-            className='w-full lg:w-1/2 md:mt-20'>
+            className='w-full lg:w-1/2 md:mt-16'>
                 <div className='flex justify-center lg:justify-start'>
-                    <p className='lg:py-16 py-5 my-2 max-w-xl'> {ABOUT_TEXT} </p>
+                    <p className='lg:pt-16 py-5 my-2 max-w-xl'> {ABOUT_TEXT} </p>
                 </div>
+                <a href="hashibub.pdf" target="_blank"><button className="bg-cyan-700 hover:bg-cyan-900 duration-500 hover:scale-105  font-medium text text-white  px-4 py-2 rounded">Resume</button></a>
             </motion.div>
             <div>
 
