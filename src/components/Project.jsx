@@ -1,4 +1,3 @@
-import React from 'react'
 import { PROJECTS } from '../constants'
 import { motion } from "framer-motion"
 function Project() {
@@ -26,7 +25,11 @@ function Project() {
                       transition={{duration: 1}}
                     className='w-full lg:w-3/4 max-w-xl'>
                         <h6 className='mb-6 font-semibold'> {value.title} </h6>
-                        <p className='mb-4 text-neutral-400'> {value.description} </p>
+                       <div className='flex items-center'>
+                       <p className='mb-4 text-neutral-400'> {value.description}</p>
+                       <a href={value.link} target='_blank' className='text-[#0E8BFF] text-sm'>🔗Link</a>
+                       </div>
+                      
                         {value.technologies.map((value, index) => (
                             <span key={index} className='mr-2 rounded bg-neutral-900 px-2 py-1 hover:bg-purple-100 cursor-context-menu text-sm font-medium text text-purple-800'>
                               {value}

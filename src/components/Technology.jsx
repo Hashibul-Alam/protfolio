@@ -1,10 +1,9 @@
-import React from 'react'
 import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaNode } from "react-icons/fa";
-import { TbBrandJavascript } from "react-icons/tb";
+import { RiJavascriptFill } from "react-icons/ri";
+import { TbBrandTailwind } from "react-icons/tb";
+import { SiBootstrap } from "react-icons/si";
+import { SiNextui } from "react-icons/si";
+import { TiHtml5 } from "react-icons/ti";
 import { motion } from "framer-motion"
 
 const iconVariants = (duration)=>({
@@ -46,36 +45,36 @@ function Technology() {
               variants={iconVariants(3)}
               initial = "initial"
               animate= "animate"
-            className='rounded-2xl hover:border-white border-2 border-neutral-800 p-1'>
-                <TbBrandNextjs className='text-4xl '/>
+            className='rounded-2xl hover:border-[#E8D44D] border-2 border-neutral-800 p-1'>
+                <RiJavascriptFill className='text-4xl text-[#E8D44D]'/>
             </motion.div>
             <motion.div
               variants={iconVariants(5)}
               initial = "initial"
               animate= "animate"
-            className='rounded-2xl hover:border-green-500 border-2 border-neutral-800 p-1'>
-                <SiMongodb className='text-4xl text-green-500'/>
+            className='rounded-2xl hover:border-[#38BDF8] border-2 border-neutral-800 p-1'>
+                <TbBrandTailwind className='text-4xl text-[#38BDF8]'/>
             </motion.div>
             <motion.div
               variants={iconVariants(2)}
               initial = "initial"
               animate= "animate"
-            className='rounded-2xl border-2 hover:border-red-700 border-neutral-800 p-1'>
-                <RiTailwindCssFill className='text-4xl text-red-700'/>
+            className='rounded-2xl border-2 hover:border-[#7910F2] border-neutral-800 p-1'>
+                <SiBootstrap className='text-4xl text-[#7910F2]'/>
             </motion.div>
             <motion.div
               variants={iconVariants(6)}
               initial = "initial"
               animate= "animate"
-            className='rounded-2xl border-2 hover:border-green-500 border-neutral-800 p-1'>
-                <FaNode className='text-4xl text-green-500'/>
+            className='rounded-2xl border-2 hover:border-teal-700 border-neutral-800 p-1'>
+                <SiNextui className='text-4xl text-teal-700'/>
             </motion.div>
             <motion.div
               variants={iconVariants(4)}
               initial = "initial"
               animate= "animate"
-            className='rounded-2xl border-2 hover:border-sky-700 border-neutral-800 p-1'>
-                <TbBrandJavascript className='text-4xl text-sky-700'/>
+            className='rounded-2xl border-2 hover:border-[#DD4B25] border-neutral-800 p-1'>
+                <TiHtml5 className='text-4xl text-[#DD4B25]'/>
             </motion.div>
         </motion.div>
     </div>

@@ -1,6 +1,5 @@
-import React from 'react'
 import { HERO_CONTENT } from '../constants'
-import  profilePic  from "../assets/kevinRushProfile.jpg";
+import  profilePic  from "../assets/new.jpg";
 import {motion } from "motion/react"
 
 const container = (delay) =>({
@@ -18,7 +17,7 @@ function NewHero() {
     <>
     <div className='border-b border-neutral-900 lg:mb-36 pb-4'>
         <div className='flex flex-wrap'>
-            <div className='w-full lg:w-1/2'>
+            <div className='w-full lg:w-1/2 md:mt-10'>
                 <div className='flex flex-col items-center lg:items-start'>
                         <motion.h1
                         variants={container(0)}
@@ -38,11 +37,12 @@ function NewHero() {
                 </div>
             </div>
             <div className='w-full lg:w-1/2 lg:px-8 py-8 lg:py-0'>
-                <div className='flex justify-center '>
+                <div className='flex justify-center  '>
                     <motion.img
                     initial={{x:100, opacity:0}}
                     animate={{x:0, opacity: 1}}
                     transition={{duration:1, delay:1.2}}
+                    className='rounded-lg'
                     src={profilePic} alt="Profilepic" />
                 </div>
             </div>

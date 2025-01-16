@@ -1,5 +1,4 @@
-import React from 'react'
-import about  from "../assets/about.jpg";
+import about  from "../assets/new.jpg";
 import { ABOUT_TEXT } from '../constants';
 import {motion } from "motion/react"
 
@@ -20,14 +19,14 @@ function About() {
             transition={{duration:1}}
             className='w-full lg:w-1/2 lg:p-8'>
                 <div className='flrx justify-center items-center'>
-                <img className="rounded-2xl " src={about} alt="about" />
+                <img className="rounded-2xl" src={about} alt="about" />
                 </div>
             </motion.div>
             <motion.div
              whileInView={{opacity:1, x:0}}
              initial={{opacity:0, x:100}}
              transition={{duration:1}}
-            className='w-full lg:w-1/2'>
+            className='w-full lg:w-1/2 md:mt-20'>
                 <div className='flex justify-center lg:justify-start'>
                     <p className='lg:py-16 py-5 my-2 max-w-xl'> {ABOUT_TEXT} </p>
                 </div>

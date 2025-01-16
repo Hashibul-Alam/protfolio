@@ -1,4 +1,3 @@
-
 import About from './components/About'
 import Contact from './components/Contact'
 import Exprince from './components/Exprince'
@@ -20,10 +19,10 @@ function App() {
     <div className='container mx-auto px-8'>
     <Navbar/>
     <NewHero/>
-    <About/>
     <Technology/>
-    <Exprince/>
+    <About/>
     <Project/>
+    <Exprince/>
     <Contact/>
   
 
