@@ -4,6 +4,7 @@ import { TbBrandTailwind } from "react-icons/tb";
 import { SiBootstrap } from "react-icons/si";
 import { SiNextui } from "react-icons/si";
 import { TiHtml5 } from "react-icons/ti";
+import { SiNextdotjs } from "react-icons/si";
 import { motion } from "framer-motion"
 
 const iconVariants = (duration)=>({
@@ -34,6 +35,13 @@ function Technology() {
         transition={{duration: 1.5}}
         
         className='flex flex-wrap items-center justify-center gap-8'>
+            <motion.div
+            variants={iconVariants(2.5)}
+            initial = "initial"
+            animate= "animate"
+            className='rounded-2xl border-2 hover:border-white  border-neutral-800 p-1'>
+                <SiNextdotjs className='text-4xl'/>
+            </motion.div>
             <motion.div
             variants={iconVariants(2.5)}
             initial = "initial"
